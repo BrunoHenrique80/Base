@@ -10,7 +10,7 @@ namespace Model
     {
         private int id;
         private string nomeUsuario;
-        private int senha;
+        private string senha;
         private bool ativo;
 
         
@@ -27,16 +27,16 @@ namespace Model
             set { nomeUsuario = value; }
         }
 
-        public int Senha
+        public string Senha
         {
             get { return senha; }
-            set { Senha = value; }
+            set { senha = value; }
         }
 
         public bool Ativo
         {
             get { return ativo; }
-            set { Ativo = value; }
+            set { ativo = value; }
         }
 
     }
