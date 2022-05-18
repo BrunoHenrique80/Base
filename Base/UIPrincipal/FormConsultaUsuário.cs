@@ -17,29 +17,25 @@ namespace UIPrincipal
             InitializeComponent();
         }
 
-        private void FormConsultaUsuário_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void buttonBuscar_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonSair_Click(object sender, EventArgs e)
         {
+            Close();
+        }
 
+        private void FormConsultaUsuário_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                buttonSair_Click(null, null);
+            }
+        }
+
+        private void buttonNovo_Click(object sender, EventArgs e)
+        {
+            using (FormCadastroUsuario frm = new FormCadastroUsuario())
+            {
+                frm.ShowDialog();
+            }
         }
     }
 }
