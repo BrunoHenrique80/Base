@@ -81,6 +81,7 @@ namespace UIPrincipal
             // buttonSalvarCadastrarNovo
             // 
             this.buttonSalvarCadastrarNovo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonSalvarCadastrarNovo.ForeColor = System.Drawing.Color.Black;
             this.buttonSalvarCadastrarNovo.Location = new System.Drawing.Point(132, 449);
             this.buttonSalvarCadastrarNovo.Name = "buttonSalvarCadastrarNovo";
             this.buttonSalvarCadastrarNovo.Size = new System.Drawing.Size(168, 33);
@@ -93,12 +94,15 @@ namespace UIPrincipal
             // 
             this.buttonSair.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSair.Location = new System.Drawing.Point(701, 449);
+            this.buttonSair.AutoSize = true;
+            this.buttonSair.BackColor = System.Drawing.Color.Lavender;
+            this.buttonSair.ForeColor = System.Drawing.Color.Black;
+            this.buttonSair.Location = new System.Drawing.Point(694, 449);
             this.buttonSair.Name = "buttonSair";
-            this.buttonSair.Size = new System.Drawing.Size(93, 35);
+            this.buttonSair.Size = new System.Drawing.Size(106, 35);
             this.buttonSair.TabIndex = 7;
             this.buttonSair.Text = "&Sair";
-            this.buttonSair.UseVisualStyleBackColor = true;
+            this.buttonSair.UseVisualStyleBackColor = false;
             this.buttonSair.Click += new System.EventHandler(this.buttonSair_Click);
             // 
             // buttonSalvar
@@ -106,6 +110,7 @@ namespace UIPrincipal
             this.buttonSalvar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonSalvar.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonSalvar.ForeColor = System.Drawing.Color.Black;
             this.buttonSalvar.Location = new System.Drawing.Point(15, 447);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(93, 33);
@@ -158,19 +163,20 @@ namespace UIPrincipal
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(806, 51);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cadastro de usuários";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // FormCadastroUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackColor = System.Drawing.Color.DarkBlue;
             this.ClientSize = new System.Drawing.Size(806, 494);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ativoCheckBox);
@@ -183,7 +189,7 @@ namespace UIPrincipal
             this.Controls.Add(this.buttonSair);
             this.Controls.Add(this.buttonSalvarCadastrarNovo);
             this.Controls.Add(this.buttonSalvar);
-            this.ForeColor = System.Drawing.Color.Black;
+            this.ForeColor = System.Drawing.Color.Transparent;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
