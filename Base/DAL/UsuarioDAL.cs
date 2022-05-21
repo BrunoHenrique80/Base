@@ -12,7 +12,7 @@ namespace DAL
             SqlConnection cn = new SqlConnection();
             try
             {
-                cn.ConnectionString =@"User ID=SA;Initial Catalog=Loja; Data Source=.\SQLEXPRESS2019;Password=sENAILAB05";
+                cn.ConnectionString = Conexao.StringDeConexao;
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -67,7 +67,7 @@ namespace DAL
             SqlConnection cn = new SqlConnection();
             try
             {
-                cn.ConnectionString = @"User ID=SA;Initial Catalog=Loja; Data Source=.\SQLEXPRESS2019;Password=sENAILAB05";
+                cn.ConnectionString = Conexao.StringDeConexao;
                 SqlCommand cmd = new SqlCommand();
                 da.SelectCommand = cmd;
                 da.SelectCommand.Connection = cn;
@@ -101,7 +101,7 @@ namespace DAL
             SqlConnection cn = new SqlConnection();
             try
             {
-                cn.ConnectionString = @"User ID=SA;Initial Catalog=Loja; Data Source=.\SQLEXPRESS2019;Password=sENAILAB05";
+                cn.ConnectionString = Conexao.StringDeConexao;
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -134,7 +134,7 @@ namespace DAL
             SqlConnection cn = new SqlConnection();
             try
             {
-                cn.ConnectionString = @"User ID=SA;Initial Catalog=Loja; Data Source=.\SQLEXPRESS2019;Password=sENAILAB05";
+                cn.ConnectionString = Conexao.StringDeConexao;
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -145,16 +145,16 @@ namespace DAL
                 cmd.Parameters.Add(pid);
 
                 SqlParameter pnomeUsuario = new SqlParameter("@NomeUsuario", SqlDbType.VarChar);
-                pid.Value = _usuario.NomeUsuario;
+                pnomeUsuario.Value = _usuario.NomeUsuario;
                 cmd.Parameters.Add(pnomeUsuario);
 
                 SqlParameter psenha = new SqlParameter("@Senha", SqlDbType.VarChar);
-                pid.Value = _usuario.Senha;
-                cmd.Parameters.Add(pnomeUsuario);
+                psenha.Value = _usuario.Senha;
+                cmd.Parameters.Add(psenha);
 
                 SqlParameter pativo = new SqlParameter("@Ativo", SqlDbType.Bit);
-                pid.Value = _usuario.Ativo;
-                cmd.Parameters.Add(pnomeUsuario);
+                pativo.Value = _usuario.Ativo;
+                cmd.Parameters.Add(pativo);
 
                 cn.Open();
                 cmd.ExecuteNonQuery();

@@ -133,6 +133,7 @@ namespace UIPrincipal
             this.buttonAlterar.TabIndex = 5;
             this.buttonAlterar.Text = "&Alterar";
             this.buttonAlterar.UseVisualStyleBackColor = true;
+            this.buttonAlterar.Click += new System.EventHandler(this.buttonAlterar_Click);
             // 
             // buttonNovo
             // 
