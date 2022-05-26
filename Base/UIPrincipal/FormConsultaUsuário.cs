@@ -43,6 +43,7 @@ namespace UIPrincipal
         private void buttonExcluir_Click(object sender, EventArgs e)
         {
             //if (MessageBox.Show("Deseja realmente excluir este registro","Atenção", MessageBoxButtons.YesNo) == DialogResult.No)
+
             if (MessageBox.Show("Deseja realmente excluir este registro?", "Atenção", MessageBoxButtons.YesNo) == DialogResult.No)
                 return;
             UsuarioBLL usuarioBLL = new UsuarioBLL();
