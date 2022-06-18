@@ -29,7 +29,7 @@ namespace UIPrincipal
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
             
-            Arquivo.GravarTextoNoFinalDoArquivo("Abriu a tela princial", @"C:\Projeto\Base\Base\UIPrincipal\bin\Debug\arquivoTeste.txt");
+            Arquivo.GravarLog("Abriu a tela princial");
         }
     }
 }
