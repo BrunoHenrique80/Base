@@ -53,12 +53,13 @@ namespace UIPrincipal
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(18, 18);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastroToolStripMenuItem,
             this.ajudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(885, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(885, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -68,21 +69,21 @@ namespace UIPrincipal
             this.usuárioToolStripMenuItem,
             this.grupoDeUsuáriosToolStripMenuItem});
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
             this.cadastroToolStripMenuItem.Text = "Cadastro";
             this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
             // 
             // usuárioToolStripMenuItem
             // 
             this.usuárioToolStripMenuItem.Name = "usuárioToolStripMenuItem";
-            this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(207, 24);
             this.usuárioToolStripMenuItem.Text = "Usuário";
             this.usuárioToolStripMenuItem.Click += new System.EventHandler(this.usuárioToolStripMenuItem_Click);
             // 
             // grupoDeUsuáriosToolStripMenuItem
             // 
             this.grupoDeUsuáriosToolStripMenuItem.Name = "grupoDeUsuáriosToolStripMenuItem";
-            this.grupoDeUsuáriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.grupoDeUsuáriosToolStripMenuItem.Size = new System.Drawing.Size(207, 24);
             this.grupoDeUsuáriosToolStripMenuItem.Text = "Grupo de usuários";
             // 
             // ajudaToolStripMenuItem
@@ -92,25 +93,25 @@ namespace UIPrincipal
             this.sobreToolStripMenuItem,
             this.sairToolStripMenuItem});
             this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
-            this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
             this.ajudaToolStripMenuItem.Text = "Ajuda";
             // 
             // trocarDeUsuárioToolStripMenuItem
             // 
             this.trocarDeUsuárioToolStripMenuItem.Name = "trocarDeUsuárioToolStripMenuItem";
-            this.trocarDeUsuárioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.trocarDeUsuárioToolStripMenuItem.Size = new System.Drawing.Size(201, 24);
             this.trocarDeUsuárioToolStripMenuItem.Text = "Trocar de usuário";
             // 
             // sobreToolStripMenuItem
             // 
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(201, 24);
             this.sobreToolStripMenuItem.Text = "Sobre";
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(201, 24);
             this.sairToolStripMenuItem.Text = "Sair";
             // 
             // panel1
@@ -120,10 +121,11 @@ namespace UIPrincipal
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 24);
+            this.panel1.Location = new System.Drawing.Point(0, 28);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(885, 88);
             this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // button4
             // 
@@ -159,11 +161,12 @@ namespace UIPrincipal
             // 
             // statusStrip1
             // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(18, 18);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 488);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 485);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(885, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(885, 25);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             this.statusStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.statusStrip1_ItemClicked);
@@ -171,16 +174,16 @@ namespace UIPrincipal
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(79, 17);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(100, 20);
             this.toolStripStatusLabel1.Text = "Usuário: Teste";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::UIPrincipal.Properties.Resources.o_livro_3591_1024x768;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 112);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 116);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(885, 376);
+            this.pictureBox1.Size = new System.Drawing.Size(885, 369);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;

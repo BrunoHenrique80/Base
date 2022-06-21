@@ -73,6 +73,7 @@ namespace DAL
                 da.SelectCommand.Connection = cn;
                 da.SelectCommand.CommandText = "SP_BuscarUsuario";
                 da.SelectCommand.CommandType = CommandType.StoredProcedure;
+
                 SqlParameter pfiltro = new SqlParameter("@filtro", SqlDbType.VarChar);
                 pfiltro.Value = _filtro;
                 da.SelectCommand.Parameters.Add(pfiltro);
